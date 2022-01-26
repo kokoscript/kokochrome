@@ -1,0 +1,134 @@
+* {
+  
+}
+
+:root {
+  --in-content-primary-button-background: #f06292 !important;
+  --in-content-primary-button-background-hover: #f06292 !important;
+  --in-content-primary-button-background-active: #f06292 !important;
+  --buttons-primary-button-bgcolor: #f06292 !important;
+  --buttons-primary-button-hover-bgcolor: #f06292 !important;
+  --buttons-primary-button-active-bgcolor: #f06292 !important;
+  --checkbox-checked-bgcolor: #f06292 !important;
+  --checkbox-checked-hover-bgcolor: #f06292 !important;
+  --checkbox-checked-active-bgcolor: #f06292 !important;
+  --lwt-popup-brighttext-url-color: #f06292 !important;
+  --focus-outline-color: #f06292 !important;
+  --urlbar-icon-border-radius: 999px !important;
+  --tab-border-radius: 999px !important;
+  --arrowpanel-menuitem-border-radius: 999px !important;
+  --toolbarbutton-border-radius: 999px !important;
+  --arrowpanel-border-radius: 16px !important;
+}
+
+#star-button[starred="true"] {
+  fill: #f06292 !important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-background {
+  border-color: #f06292 !important;
+  border-width: 1px !important;
+  border-radius: 16px !important;
+}
+
+#PlacesToolbar {
+  color: #bbb;
+}
+
+.tab-text[selected="true"], .tab-label[selected="true"] {
+  color: #111111 !important;
+  text-shadow: none;
+}
+
+.tab-close-button[selected="true"] {
+  color: #111111 !important;
+  text-shadow: none;
+}
+
+.tab-background {
+  border-radius: 16px 16px 0px 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.tab-background[selected="true"] {
+  background-color: #f06292 !important;
+  background-image: none !important;
+  --tab-line-color:  none !important;
+  border:  none !important;
+  /*background-image: linear-gradient(var(--lwt-selected-tab-background-color, transparent), var(--lwt-selected-tab-background-color, transparent)), linear-gradient(rgb(30, 30, 30), rgb(247, 79, 158)), var(--lwt-header-image, none) !important; */
+}
+
+.tab-background:not([selected]) {
+  background-color: #1e1e1e !important;
+}
+
+.tab-content {
+  padding-top: 8px !important;
+  padding-bottom:  5px !important;
+}
+
+#urlbar-background {
+  border-radius: 999px !important;
+}
+
+#urlbar-input::placeholder, .searchbar-textbox::placeholder {
+  font-style: italic;
+}
+#urlbar-input-container {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.urlbarView-row[aria-selected="true"] .urlbarView-row-inner {
+  color: #111111 !important;
+  background-color: #f06292 !important;
+  border-radius: 999px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+.tab-icon-overlay[selected="true"] {
+  fill: #000 !important;
+}
+
+#downloads-button[attention="success"] > .toolbarbutton-badge-stack > #downloads-indicator-anchor > #downloads-indicator-icon {
+  fill: #f06292 !important;
+}
+#downloads-button[attention="success"] > .toolbarbutton-badge-stack > #downloads-indicator-start-box > #downloads-indicator-start-image {
+  stroke: #f06292 !important;
+}
+#downloads-indicator-finish-image {
+  fill: #f06292 !important;
+  stroke: #f06292 !important;
+}
+
+#downloads-indicator-progress-inner {
+  background: linear-gradient(to top, #f06292 var(--download-progress-pcent), transparent var(--download-progress-pcent)) !important;
+}
+
+@-moz-document regexp("^(about:|chrome:|moz-extension:).*") {
+  :root {
+  --in-content-primary-button-background: #f06292 !important;
+  --in-content-primary-button-background-hover: #f06292 !important;
+  --in-content-primary-button-background-active: #f06292 !important;
+  --buttons-primary-button-bgcolor: #f06292 !important;
+  --buttons-primary-button-hover-bgcolor: #f06292 !important;
+  --buttons-primary-button-active-bgcolor: #f06292 !important;
+  --checkbox-checked-bgcolor: #f06292 !important;
+  --checkbox-checked-hover-bgcolor: #f06292 !important;
+  --checkbox-checked-active-bgcolor: #f06292 !important;
+  --lwt-popup-brighttext-url-color: #f06292 !important;
+  --focus-outline-color: #f06292 !important;
+}
+
+  html:not([role="dialog"]),
+  html:not([role="dialog"]) *,
+  html:not([role="dialog"]) body.activity-stream,
+  window:not([chromehidden]),
+  window:not([chromehidden]) > dialog
+  {
+    --in-content-primary-button-background: #f06292 !important;
+    --in-content-primary-button-background-hover: #f06292 !important;
+    --in-content-primary-button-background-active: #f06292 !important;
+  }
+}

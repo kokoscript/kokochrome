@@ -1,0 +1,68 @@
+:root {
+  --in-content-primary-button-background: #f06292 !important;
+  --in-content-primary-button-background-hover: #f06292 !important;
+  --in-content-primary-button-background-active: #f06292 !important;
+  --buttons-primary-button-bgcolor: #f06292 !important;
+  --buttons-primary-button-hover-bgcolor: #f06292 !important;
+  --buttons-primary-button-active-bgcolor: #f06292 !important;
+  --checkbox-checked-bgcolor: #f06292 !important;
+  --checkbox-checked-hover-bgcolor: #f06292 !important;
+  --checkbox-checked-active-bgcolor: #f06292 !important;
+  --lwt-popup-brighttext-url-color: #f06292 !important;
+  --focus-outline-color: #f06292 !important;
+}
+
+@-moz-document regexp("^(about:|chrome:|moz-extension:).*") {
+
+  :root {
+  --in-content-primary-button-background: #f06292 !important;
+  --in-content-primary-button-background-hover: #f06292 !important;
+  --in-content-primary-button-background-active: #f06292 !important;
+  --buttons-primary-button-bgcolor: #f06292 !important;
+  --buttons-primary-button-hover-bgcolor: #f06292 !important;
+  --buttons-primary-button-active-bgcolor: #f06292 !important;
+  --checkbox-checked-bgcolor: #f06292 !important;
+  --checkbox-checked-hover-bgcolor: #f06292 !important;
+  --checkbox-checked-active-bgcolor: #f06292 !important;
+  --lwt-popup-brighttext-url-color: #f06292 !important;
+  --focus-outline-color: #f06292 !important;
+}
+
+  html:not([role="dialog"]),
+  html:not([role="dialog"]) *,
+  html:not([role="dialog"]) body.activity-stream,
+  window:not([chromehidden]),
+  window:not([chromehidden]) > dialog
+  {
+    --in-content-primary-button-background: #f06292 !important;
+    --in-content-primary-button-background-hover: #f06292 !important;
+    --in-content-primary-button-background-active: #f06292 !important;
+  }
+}
+
+@-moz-document url("about:home"), url("about:newtab") {
+  .tile {
+    border-radius: 16px !important;
+  }
+  .icon-wrapper {
+    border-radius: 10px !important;
+  }
+  .search-inner-wrapper {
+    --newtab-primary-action-background: #f06292 !important;
+  }
+  .logo {
+    background: url("about-logo.png") no-repeat center !important;
+    background-size: 82px !important;
+    display: inline-block !important;
+    height: 82px !important;
+    width: 82px !important;
+  }
+  .wordmark {
+    background: url("firefox-wordmark.svg") no-repeat center center !important;
+    background-size: 194px !important;
+    display: inline-block !important;
+    height: 82px !important;
+    margin-inline-start: 16px !important;
+    width: 194px !important;
+  }
+}
